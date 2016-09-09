@@ -1,0 +1,11 @@
+{
+    "name": "hello/world",
+    "description": "This is a hello world module",
+    "authors": [
+        {
+            "name": "apollomm",
+            "email": "amalapote@gmail.com"
+        }
+    ],
+    "require": {}
+}

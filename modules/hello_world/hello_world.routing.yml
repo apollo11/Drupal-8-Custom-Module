@@ -1,0 +1,16 @@
+hello_world.content:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloController::content'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+#  route_callbacks: '\Drupal\hello_world\Routing\CustomRoutes::routes'
+
+hello_world.cats:
+  path: '/hello/{name}'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloController::cats'
+  requirements:
+    _permission: 'access content'
+    name: '[a-zA-z]+'
