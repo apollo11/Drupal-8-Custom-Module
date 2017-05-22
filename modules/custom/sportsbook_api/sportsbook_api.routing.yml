@@ -1,0 +1,9 @@
+sportsbook_api:
+  path: '/api/v1/sports/{langcode}'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\sportsbook_api\Controller\SportsBookController::index'
+  requirements:
+    _user_is_logged_in: 'TRUE'

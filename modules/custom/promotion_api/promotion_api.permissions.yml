@@ -1,0 +1,4 @@
+administer game resources:
+  title: 'Administer promotion API resources'
+  description: 'Configure promotion REST resources.'
+  restrict access: TRUE

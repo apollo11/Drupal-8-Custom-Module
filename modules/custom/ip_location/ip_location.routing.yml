@@ -1,0 +1,15 @@
+ip_location.IP:
+  path: '/api/v1/iso'
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\ip_location\Controller\IpLocationController::setCountryCode'
+  requirements:
+    _access: 'TRUE'
+
+ip_location.country:
+  path: '/api/v1/country'
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\ip_location\Controller\IpLocationController::setCountry'
+  requirements:
+    _access: 'TRUE'

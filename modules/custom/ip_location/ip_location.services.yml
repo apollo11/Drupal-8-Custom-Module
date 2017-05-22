@@ -1,0 +1,5 @@
+services:
+  ip_location.subscriber:
+    class: 'Drupal\ip_location\EventSubscriber\IpLocationSubscriber'
+    tags:
+      - { name: event_subscriber }

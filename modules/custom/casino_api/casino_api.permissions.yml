@@ -1,0 +1,4 @@
+administer casino resources:
+  title: 'Administer casino API resources'
+  description: 'Configure casino REST resources.'
+  restrict access: TRUE

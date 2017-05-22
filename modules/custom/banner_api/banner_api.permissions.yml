@@ -1,0 +1,4 @@
+administer banner resources:
+  title: 'Administer banner API resources'
+  description: 'Configure banner REST resources.'
+  restrict access: TRUE

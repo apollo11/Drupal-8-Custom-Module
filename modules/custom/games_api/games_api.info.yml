@@ -1,0 +1,5 @@
+name: Games API
+type: module
+description: This is a API Call for games
+package: API Integration
+core: 8.x

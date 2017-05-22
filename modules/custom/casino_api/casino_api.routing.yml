@@ -1,0 +1,9 @@
+casino_api:
+  path: '/api/v1/casino/{langcode}'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\casino_api\Controller\CasinoController::index'
+  requirements:
+    _user_is_logged_in: 'TRUE'

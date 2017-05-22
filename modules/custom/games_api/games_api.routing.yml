@@ -1,0 +1,59 @@
+games_api.content:
+  path: '/api/v1/games/{langcode}'
+  options:
+    _auth: [ 'basic_auth']
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\games_api\Controller\GamesController::index'
+    _title: 'Games'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+games_api.platform_category:
+  path: '/api/v1/games/{langcode}/{platform}/{category}'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\games_api\Controller\GamesController::getGamesFilterByPlatformCategory'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+games_api.platform:
+  path: '/api/v1/games/{langcode}/{platform}'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\games_api\Controller\GamesController::getGamesFilterByPlatform'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+games_api.category:
+  path: '/api/v1/games/{langcode}/{category}'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\games_api\Controller\GamesController::getGamesFilterByCategory'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+games_api.terms:
+  path: '/api/v1/games/terms'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\games_api\Controller\GamesController::getTerms'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+router_test.11:
+  path: '/router_test/test11/{langcode}'
+  options:
+    _auth: [ 'basic_auth' ]
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  defaults:
+    _controller: '\Drupal\games_api\Controller\GamesController::index'

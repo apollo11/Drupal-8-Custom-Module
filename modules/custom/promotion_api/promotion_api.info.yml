@@ -1,0 +1,5 @@
+name: Promotion API
+type: module
+description: This is a API Call for promotion
+package: API Integration
+core: 8.x

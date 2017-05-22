@@ -1,0 +1,5 @@
+name: IP Location
+type: module
+description: IP Location using maxmind
+package: custom
+core: 8.x

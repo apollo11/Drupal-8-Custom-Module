@@ -1,0 +1,4 @@
+administer game resources:
+  title: 'Administer games API resources'
+  description: 'Configure games REST resources.'
+  restrict access: TRUE

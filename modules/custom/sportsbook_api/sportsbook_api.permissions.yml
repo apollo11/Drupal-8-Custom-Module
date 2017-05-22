@@ -1,0 +1,4 @@
+administer sportsbook resources:
+  title: 'Administer sportsbook API resources'
+  description: 'Configure sportsbook REST resources.'
+  restrict access: TRUE

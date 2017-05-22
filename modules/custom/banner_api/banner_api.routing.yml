@@ -1,0 +1,19 @@
+banner_api:
+  path: '/api/v1/banner/{langcode}'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\banner_api\Controller\BannerController::index'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+banner_api.IP:
+  path: '/api/v1/ip'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\banner_api\Controller\BannerController::testIP'
+  requirements:
+    _user_is_logged_in: 'TRUE'

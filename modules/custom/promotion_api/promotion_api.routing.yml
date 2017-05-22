@@ -1,0 +1,29 @@
+promotion_api:
+  path: '/api/v1/promotion/{langcode}'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\promotion_api\Controller\PromotionController::index'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+promotion_api.category:
+  path: '/api/v1/promotion/{langcode}/{category}'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\promotion_api\Controller\PromotionController::getPromotionByCategory'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+promotion_api.details:
+  path: '/api/v1/promotion/{langcode}/{category}/{id}'
+  options:
+    _auth: [ 'basic_auth' ]
+  methods: [ GET ]
+  defaults:
+    _controller: '\Drupal\promotion_api\Controller\PromotionController::getPromotionByDetails'
+  requirements:
+    _user_is_logged_in: 'TRUE'
